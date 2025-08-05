@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int n;
+    printf("enter a number:");
+    scanf("%d",&n);
+    int sumodd=0;
+    int sumeven=0;
+    for(int i=1;i<=n;i++){
+        if(i%2==0)
+        sumeven=sumeven+i;
+    }
+    for(int i=1;i<=n;i++){
+        if(i%2!=0)
+        sumodd=sumodd+i;
+    }
+    printf("the sum of the given even number is:%d\n",sumeven);
+    printf("the sum of the given odd number is:%d\n",sumodd);
+    return 0;
+}
